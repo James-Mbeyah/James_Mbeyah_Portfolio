@@ -8,7 +8,7 @@ const projects = [
     description:
       "Automated the complex debt allocation workflow for the insurance sector, significantly reducing manual processing time and improving accuracy in financial operations.",
     icon: Cog,
-    tools: ["Python", "Flask", "PostgreSQL", "Power BI"],
+    tools: ["Python", "Flask", "PostgreSQL"],
     impact: "Reduced processing time by 70% and eliminated manual errors",
     color: "from-blue-500/20 to-cyan-500/20",
   },
@@ -26,7 +26,7 @@ const projects = [
     description:
       "Developed a responsive web platform connecting farmers with markets, resources, and expert agricultural advice to enhance productivity and profitability.",
     icon: Leaf,
-    tools: ["ReactJS", "NodeJS", "MongoDB", "Tailwind CSS"],
+    tools: ["Javascript", "PostgreSQL","PHP", "HTML", "CSS"],
     impact: "Empowering farmers with digital tools for growth",
     color: "from-green-500/20 to-emerald-500/20",
   },
@@ -61,7 +61,7 @@ const ProjectsSection = () => {
               className="group"
             >
               <div className="h-full bg-background rounded-2xl border border-border overflow-hidden card-elevated">
-                {/* Project Header with Gradient */}
+                
                 <div className={`h-32 bg-gradient-to-br ${project.color} relative flex items-center justify-center`}>
                   <project.icon className="w-12 h-12 text-foreground/60 group-hover:scale-110 transition-transform" />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent" />
@@ -75,14 +75,12 @@ const ProjectsSection = () => {
                     {project.description}
                   </p>
 
-                  {/* Impact */}
                   <div className="mb-4 p-3 bg-primary/5 rounded-lg border border-primary/10">
                     <p className="text-xs font-medium text-primary">
                       ✨ {project.impact}
                     </p>
                   </div>
 
-                  {/* Tools */}
                   <div className="flex flex-wrap gap-2">
                     {project.tools.map((tool) => (
                       <span

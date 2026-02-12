@@ -53,7 +53,6 @@ const SkillsSection = () => {
           </h2>
         </motion.div>
 
-        {/* Technical Skills */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -64,7 +63,6 @@ const SkillsSection = () => {
             Technical Skills
           </h3>
           
-          {/* Category Icons */}
           <div className="flex justify-center gap-8 mb-8">
             {skillCategories.map((cat, index) => (
               <motion.div
@@ -82,7 +80,6 @@ const SkillsSection = () => {
             ))}
           </div>
 
-          {/* Skills Grid */}
           <div className="flex flex-wrap justify-center gap-3">
             {technicalSkills.map((skill, index) => (
               <motion.span
@@ -98,7 +95,6 @@ const SkillsSection = () => {
           </div>
         </motion.div>
 
-        {/* Soft Skills */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}

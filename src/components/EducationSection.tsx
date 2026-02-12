@@ -28,7 +28,6 @@ const EducationSection = () => {
           className="max-w-2xl mx-auto"
         >
           <div className="bg-background rounded-2xl p-8 border border-border card-elevated relative overflow-hidden">
-            {/* Decorative Gradient */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/10 to-accent/10 rounded-full -translate-y-1/2 translate-x-1/2" />
             
             <div className="relative">

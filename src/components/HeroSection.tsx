@@ -105,7 +105,6 @@ const HeroSection = () => {
             className="flex justify-center"
           >
             <div className="relative">
-              {/* Profile Photo Container */}
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl shadow-primary/10 relative z-10 bg-gradient-to-br from-primary/20 to-accent/20">
                 <img 
                   src={jamesPhoto} 
@@ -115,7 +114,6 @@ const HeroSection = () => {
                 />
               </div>
               
-              {/* Decorative Ring */}
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
@@ -125,8 +123,7 @@ const HeroSection = () => {
             </div>
           </motion.div>
         </div>
-
-        {/* Scroll Indicator */}
+        
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

@@ -61,7 +61,6 @@ const ExperienceSection = () => {
         </motion.div>
 
         <div className="relative">
-          {/* Timeline Line */}
           <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-border md:transform md:-translate-x-1/2" />
 
           {experiences.map((exp, index) => (
@@ -74,7 +73,6 @@ const ExperienceSection = () => {
                 index % 2 === 0 ? "md:pr-12 md:text-right" : "md:ml-auto md:pl-12"
               }`}
             >
-              {/* Timeline Dot */}
               <div
                 className={`absolute top-0 w-4 h-4 rounded-full bg-primary border-4 border-background shadow-lg ${
                   index % 2 === 0

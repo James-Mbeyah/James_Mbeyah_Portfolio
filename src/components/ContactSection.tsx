@@ -35,7 +35,6 @@ const ContactSection = () => {
 
   return (
     <section id="contact" className="section-padding bg-background relative overflow-hidden">
-      {/* Background Decoration */}
       <div className="absolute inset-0 bg-gradient-to-t from-primary/5 via-transparent to-transparent" />
       
       <div className="container-narrow relative" ref={ref}>
